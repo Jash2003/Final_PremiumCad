@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>CAD Services | PremiumCAD</title>
+</head>
+<script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      })
+    })
+  </script>
+<body class="servicespecific cad">
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+      <img class="alternate-logo" src="{% static 'images/logo_mini.png' %}" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecomservices.html#two">Construction Drawings</a></li>
+              <li><a href="telecomservices.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><a href="pathways.html">Process</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blogs.html">Premium Blog</a></li>
+      <li><a href="index.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+
+    <section class="banner"></section>
+    <section class="cntnt container">
+        <h1>CAD Services</h1>
+        <p>
+            A geographic information system (GIS) is a system designed to capture, store, manipulate, analyze, manage, and present spatial or geographic data. For that reason, GIS and location intelligence applications can be the foundation for many location-enabled services that rely on analysis and visualization.
+            <br>
+            <br>
+            PremiumCAD enables clients to capture, sort, and interpret spatial and geographic data that's critical to their businesses and present it on interactive maps. A well-built Geographic Information System (GIS) allows organizations and institutions to uncover actionable from location data, map layers, and 3D modeling.  
+            <br>
+            <br>
+            PremiumCAD engineers provide consulting and GIS software services covering precision mapping and spatial data management to recognize geographical patterns visible only through GIS mapping solutions.
+        </p>
+    </section>
+    <section class="one" id="one"></section>
+    <section class="cntnt container">
+        <h2>2D / 3D Drafting</h2>
+        <p>
+            We provide modelling services for customers moving from the 2D to the 3D world. We can assist you in re-creating and converting your sketches, ideas and 
+            drawing concepts to accurate, hi-quality, detailed 3D Models.
+            <br>
+            These 2D to 3D converted models can be suited as presentation graphics, accurate inputs for subsequent tests as well as to prepare Prototype models 
+            using rapid prototyping techniques. We provide 3D models in formats which are compatible with AutoCAD, Pro/E, Solidworks, Archicad, Revit, Rhino, 3DS 
+            Max etc.
+        </p>
+    </section>
+    <section class="two" id="two"></section>
+    <section class="cntnt container">
+        <h2>Engineering Drawings</h2>
+        <p>
+            PremiumCAD specializes in providing offshore structural desig & drafting and structural steel detailing services to clients across the Globe.
+            <br>
+            <br>
+            Our services bouquet includes:
+        </p>
+        <ul>
+            <li>Structural Design</li>
+            <li>Structural drafting</li>
+            <li>Structural steel Detailing</li>
+            <li>X-Steel Detailing</li>
+            <li>Structural Analysis</li>
+            <li>3D Modeling</li>
+            <li>Building Information Modeling(BIM)</li>
+            <li>Construction Documents</li>
+            <li>Shop Drawings</li>
+            <li>Structural Drawings</li>
+            <li>Fabrication drawings</li>
+            <li>Paper to CAD Conversion</li>
+            <li>Working drawings</li>
+            <li>Assembly drawings</li>
+            <li>Creation of drawings and BOM</li>
+            <li>Piping & Instrumentation Diagram</li>
+            <li>Domestic Water System</li>
+            <li>Waste Water System</li>
+            <li>Storm Water System</li>
+            <li>Typical Enlarge Diagram</li>
+        </ul>
+    </section>
+    <section class="three" id="three"></section>
+    <section class="cntnt container">
+        <h2>BIM</h2>
+        <p>
+            BIM Services, Building Information Modeling (BIM) is a new way of approaching the design and documentation of various types of building projects. It is an intelligent digital representation of physical and functional characteristics of a facility.
+            <br>
+            <br>
+            Our team of BIM experts possess an in-depth subject matter expertise and are experienced in handling international projects and providing precise BIM Modeling Services. Over a period of 5+ years, PremiumCAD has established itself as a leading BIM outsourcing company in India providing CAD to BIM Conversion Services, 4D BIM Services, 5D BIM Services and quantity take-offs. We are committed to providing high quality deliverable within the stipulated time frame.
+        </p>
+    </section>
+
+    <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/?originalSubdomain=in" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="footer-para">PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+</body>
+</html>

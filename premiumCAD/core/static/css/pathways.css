@@ -1,0 +1,136 @@
+/******* Content SECTION *******/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue-text {
+  color: #2d348f;
+}
+
+.orange-text {
+  color: #d95a31;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+#process_banner{
+  
+    background-size: cover;
+    background-position: center;
+    height: 55vmin;
+    width: 100%;
+    background-image: url(../images/process_banner.jpg);
+  
+}
+
+#quality-intro {
+    padding: 50px 0px;
+}
+
+.quality-intro .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.quality-intro h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #3d4f97;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.quality-intro p {
+  margin: 15px 0 30px 0;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.quality-intro img {
+    padding: 0px 40px;
+}
+
+.top-heading{
+  margin: 0 auto;
+}
+/******* Content SECTION END *******/
+  
+.services .section-header h3 {
+  font-size: 25px;
+  text-align: left;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.services .section-header p {
+  font-weight: 300;
+  text-align: left;
+  color: black;
+  font-size: 19px;
+}
+
+.diagram img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.main_content{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  color: #3d4f97;
+  font-size: 50px;
+}
+
+.aboutus p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.heading p{
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.aboutus h2{
+  font-size: 25px;
+}
+.heading h2{
+  font-size: 25px;
+}

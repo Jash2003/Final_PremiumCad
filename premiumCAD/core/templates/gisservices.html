@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>GIS Services | PremiumCAD</title>
+</head>
+<script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      })
+    })
+  </script>
+<body class="servicespecific GIS">
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+      <img class="alternate-logo" src="{% static 'images/logo_mini.png' %}" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecomservices.html#two">Construction Drawings</a></li>
+              <li><a href="telecomservices.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><a href="pathways.html">Process</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blogs.html">Premium Blog</a></li>
+      <li><a href="index.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+    <section class="banner"></section>
+    <section class="cntnt container">
+        <h1>GIS Services</h1>
+        <p>
+            A geographic information system (GIS) is a system designed to capture, store, manipulate, analyze, manage, and present spatial or geographic data; for 
+            that reason, GIS and location intelligence applications can be the foundation for many location-enabled services that rely on analysis and visualization.
+            <br>
+            PremiumCAD enables clients to capture, sort, and interpret spatial and geographic data that's critical to their businesses and present it on interactive 
+            maps. A well-built Geographic Information System (GIS) allows organizations and institutions to uncover actionable from location data, map layers, and 3D 
+            modeling.  PremiumCAD engineers provide consulting and GIS software services covering precision mapping and spatial data management to recognize 
+            geographical patterns visible only through GIS mapping solutions.
+        </p>
+    </section>
+    <section class="one" id="one"></section>
+    <section class="cntnt container">
+        <h2>Utility Mapping</h2>
+        <p>
+            Experience in implementing and managing design-based GIS solutions helps PremiumCAD engineers and designers to think beyond traditional engineering 
+            methods and provide innovative, cost-effective design support services to transmission and distribution utilities.
+        </p>
+        <h3>
+            PremiumCAD utilities engineering support services include:
+        </h3>
+        <ul>
+            <li>Asset Data Building and Maintenance</li>
+            <li>Records Conversion and Integration</li>
+            <li>Build Primary and Secondary Connectivity</li>
+            <li>Field Data Update</li>
+            <li>Asset Data & MetaData building</li>
+        </ul>
+        <h3>
+            GIS Data Management
+        </h3>
+        <ul>
+            <li>Network Drafting</li>
+            <li>Transmission & Distribution Network Mapping</li>
+            <li>GIS Data Integration</li>
+            <li>Work Order Management and Posting</li>
+            <li>Legacy Data Conversion and Integration</li>
+            <li>Bi-Directional Tool for CAD to GIS Migration</li>
+        </ul>
+        <h3>
+            Enterprise Solution
+        </h3>
+        <ul>
+            <li>Data Migration</li>
+            <li>Data Modelling/System Design and Integration</li>
+        </ul>
+        <h3>
+            Value Proposition
+        </h3>
+        <ul>
+            <li>Year-on-Year efficiency gains</li>
+            <li>Reduction in cost of ownership</li>
+            <li>Quick adaption to existing processes</li>
+            <li>Faster ramp-up and steady operation</li>
+            <li>Ability to manage demand fluctuations</li>
+            <li>Best in class project management team and practices</li>
+        </ul>
+    </section>
+    <section class="two" id="two"></section>
+    <section class="cntnt container">
+        <h2>GIS Mapping</h2>
+        <p>
+            PremiumCAD provides numerous GIS services to its clients across the globe. The GIS services rendered by PremiumCAD facilitate visualization of geographic 
+            data, analysis of spatial relationships, and effective data management. The GIS data conversions allow data from different sources to be merged in one 
+            common format, which allows easy access, analysis and utilization.
+            <br>
+            <br>
+            PremiumCAD works on GIS data conversions and prepares electronic maps using Geographic Information Systems (GIS) and utilizing the paper or electronic data that has 
+            been either captured by the clients or collected thru other sources.
+            <br>
+            <br>
+            The vast experience and expertise allows PremiumCAD to integrate GIS, CAD and GPS (Global Positioning Systems) services, by using high-end GIS Mapping and GIS data 
+            conversion software. These services allow customers to produce spatial maps, cadastral maps, contour maps, landscape maps, atlas maps, thematic and zonal maps, and 
+            environmental maps for host of industries like mining and geology, petroleum pipelines, land information management, utility, agriculture, and other GIS Mapping and 
+            Remote Sensing companies.
+            <br>
+            <br>
+            PremiumCAD provides GIS services with an all-inclusive solution for spatial data management to government and industrial organizations through GIS remote 
+            sensing services.
+            <br>
+            <br>
+            PremiumCAD's complex GIS Mapping Services include capturing, storing, integrating, manipulating, analysing, and displaying data related to positions on 
+            the Earth's surface.
+            <br>
+            <br>
+            PremiumCAD uses updated technology that are implemented by highly experienced and qualified designers to create maps. The services can be used for system 
+            design and architecture, management and maintenance, map production and analysis, database design and development, user training and support, and 3d modeling 
+            and visualization for GIS mapping products and GIS remote sensing products.
+        </p>
+        <h3>
+            The various GIS Data Services offered by PremiumCAD are:
+        </h3>
+        <ul>
+            <li>Digitization</li>
+            <li>3D Building Landmarks</li>
+            <li>Indoor Mapping</li>
+            <li>Navigation</li>
+            <li>Survey</li>
+            <li>Municipal GIS</li>
+            <li>Cadastral Mapping</li>
+            <li>Topographical Mapping</li>
+            <li>Parcel mapping</li>
+            <li>GIS Data Capture</li>
+            <li>Pole Loading Analysis</li>
+        </ul>
+    </section>
+    <section class="three" id="three"></section>
+    <section class="cntnt container">
+        <h2>GeoReferencing & Geocoding</h2>
+        <h3>Georeferencing Raster Images</h3>
+        <p>
+            A raster image, also known as a bitmap, is a way to represent digital images via pixels. The raster image can include a variety of formats including .tif .gif, .jpg, and .bmp. A crucial element of any mapping project is registering and integrating maps with correct real world coordinates; Latitude and Longitude (Lat/Long). This procedure is called georeferencing. If the maps are not georeferenced, no “intelligent” information can be displayed or positioned on the map. Depending on the source materials and the specifications of the project, maps can be registered to either a coordinate system, or to another base map such as a digital orthophoto. 
+        </p>
+        <h3>
+            Georeferencing Vector Data
+        </h3>
+        <p>
+            Vector data can be georeferenced (or rubbersheeted) to real world coordinates; Latitude and Longitude (Lat/Long). Rubbersheeting is a nonuniform adjustment of a data set based on the association of known control points to new locations. Vector data can be either rubbersheeted to match existing base maps or the data may be projected into a specific coordinate system. Unlike raster images, vector images contain useful “intelligent” data/information that can be used in various Geographic Information Systems (GIS) software programs.
+        </p>
+        <h3>Geocoding</h3>
+        <p>Geocoding is the process of transforming a description of a location—such as a pair of coordinates, an address, or a name of a place—to a location on the earth's surface. You can geocode by entering one location description at a time or by providing many of them at once in a table. The resulting locations are output as geographic features with attributes, which can be used for mapping or spatial analysis.
+            <br>
+            <br>
+            You can quickly find various kinds of locations through geocoding. The types of locations that you can search for include points of interest or names from a gazetteer, like mountains, bridges, and stores; coordinates based on latitude and longitude or other reference systems, such as the Military Grid Reference System (MGRS) or the U.S. National Grid system; and addresses, which can come in a variety of styles and formats, including street intersections, house numbers with street names, and postal codes.
+        </p>
+        <h3>
+            What can geocoding be used for?
+        </h3>
+        <p>
+            From simple data analysis to business and customer management to distribution techniques, there is a wide range of applications for which geocoding can be used. With geocoded addresses, you can spatially display the address locations and recognize patterns within the information. This can be done by simply looking at the information or using some of the analysis tools available. You can also display your address information based on certain parameters, allowing you to further analyze the information.
+        </p>
+    </section>
+
+    <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/?originalSubdomain=in" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-para">PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+</body>
+</html>

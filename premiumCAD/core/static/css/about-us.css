@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue-text {
+  color: #2d348f;
+}
+
+.orange-text {
+  color: #d95a31;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+
+/* main section css */
+
+#about_banner {
+  
+  background-size: cover;
+  background-position: center;
+  height: 55vmin;
+  width: 100%;
+  background-image: url(../images/about_banner.jpeg);
+  
+}
+.main_content {
+  width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  color: #3d4f97;
+  font-size: 55px;
+}
+
+h2 {
+  font-weight: 400;
+  color: #3d4f97;
+}
+
+.aboutus p,
+.heading p {
+  font-size: 19px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.6;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading ul {
+  font-size: 19px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.heading ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.heading ul li strong {
+  font-weight: 400;
+  color: #3d4f97;
+}
+
+/* Additional styling for overall improvement */
+.aboutus,
+.heading {
+  margin-bottom: 40px;
+}
+
+.aboutus p {
+  margin-bottom: 10px;
+}
+
+.heading h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.container-fluid {
+  padding: 40px 20px 20px 20px;
+}
+
+.mission-content, .vision-content, .values-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-text, .vision-text, .values-text {
+  width: 50%;
+  padding: 20px;
+}
+
+.mission-image img, .vision-image img, .values-image img {
+  width: 25vmax;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-heading {
+      font-size: 40px;
+  }
+
+  .heading h2 {
+      font-size: 24px;
+  }
+
+  .aboutus p,
+  .heading p,
+  .heading ul {
+      font-size: 17px;
+  }
+
+  .mission-content, .vision-content, .values-content {
+      flex-direction: column;
+  }
+
+  .mission-text, .vision-text, .values-text,
+  .mission-image img, .vision-image img, .values-image img {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .mission-image img, .vision-image img, .values-image img {
+      width: 100%;
+      height: auto;
+  }
+}

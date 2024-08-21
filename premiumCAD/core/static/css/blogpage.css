@@ -1,0 +1,548 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue-text {
+  color: #2d348f;
+}
+
+.orange-text {
+  color: #d95a31;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+  ::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 100vw;
+  transition: background 0.3s ease;
+}
+
+
+nav {
+  text-decoration: none;
+  list-style: none;
+  height: 85px;
+  width: 100%;
+  background: #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+  text-decoration: none;
+  position: relative; 
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active, a:hover {
+  /* color: white;  */
+  position: relative;
+  text-decoration: none !important;
+  transition: .5s;
+}
+
+a.active::after,
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust the distance of the underline from text */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Adjust the thickness of the underline */
+  background-color: #3d4f97; /* Set the color of the underline */
+  transition: .5s;
+}
+
+  /* Optional: Change the underline color on hover */
+nav a:hover::after {
+  background-color: #3d4f97; /* Change to your desired hover color */
+} 
+
+nav #icon {
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 101;
+}
+
+@media (max-width: 1048px) {
+  label.logo {
+      font-size: 32px;
+      padding-left: 60px;
+  }
+  nav ul {
+      margin-right: 20px;
+  }
+  nav a {
+      font-size: 17px;
+  }
+}
+
+@media (max-width: 1450px) {
+  nav #icon {
+      display: block;
+  }
+  nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2f3640;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav a {
+      font-size: 20px;
+  }
+  a.active, a:hover {
+      border: none;
+      color: #3498db;
+  }
+  nav ul.show {
+      left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo img.original-logo {
+      display: none; /* Hide the original logo */
+  }
+  .logo img.alternate-logo {
+      display: inline-block; /* Display the alternate logo */
+  }
+
+  label.logo {
+      font-size: 20px;
+      padding-left: 10px;
+  }
+  nav ul {
+      margin-right: 10px;
+  }
+  nav a {
+      font-size: 14px;
+  }
+}
+
+  .logo .original-logo {
+  display: inline-block;
+  }
+
+  /* Hide the alternate logo by default */
+  .logo .alternate-logo {
+  display: none;
+  max-height: 60px;
+  }
+
+  /* Dropdown container */
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  width: 220px;
+  z-index: 4;
+  top: 80px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  }
+
+  /* Show the dropdown on hover */
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
+  /* Style adjustments for responsive dropdown */
+  @media (max-width: 1300px) {
+  .dropdown-content {
+      position: static;
+      box-shadow: none;
+  }
+  }
+
+  /* Add this CSS to hide the navbar */
+  nav.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  }
+
+  .showing {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+  }
+
+  /* Sub-dropdown container */
+  .sub-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #f0f0f0;
+  z-index: 5;
+  }
+
+  /* Links inside the sub-dropdown */
+  .sub-dropdown a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  white-space: nowrap;
+  }
+
+  /* Show the sub-dropdown on hover */
+  .dropdown-part:hover .sub-dropdown {
+  display: block;
+  }
+
+  /* Adjust positioning for the sub-dropdown */
+  @media (max-width: 1450px) {
+  .sub-dropdown {
+      position: static;
+      box-shadow: none;
+  }
+  }
+
+
+
+/******* FOOTER SECTION *******/
+.foot {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background: #3d4f97;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.6rem;
+  transition: color .4s ease;
+}
+
+.soocials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+/******* FOOTER END *******/
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.blog-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.blog-header {
+    text-align: left;
+}
+
+.blog-logo {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.blog-title {
+    font-weight: 500;
+    font-size: 50px;
+    text-align: left;
+}
+
+.blog-info {
+    font-size: 19px;
+    color: #777;
+    margin-top: -10px;
+}
+
+.blog-info img {
+    max-height: 19px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.blog-content {
+    margin-top: 30px;
+}
+
+.blog-subheading {
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.blog-paragraph, li {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Style for Recent Posts Section */
+.recent-posts {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 10px 10px 10px;
+}
+
+.recent-heading {
+    flex-grow: 1;
+}
+
+.recent-button {
+    margin-left: 10px;
+}
+
+.recent-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .recent-posts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .recent-button {
+        margin-top: 10px;
+        margin-left: 0; 
+    }
+}
+
+
+.blog-recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    border-radius: 20px;
+    /* border: 1px solid #708090; */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 620px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.blog-img {
+    width: 100%;
+    height: 300px;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span {
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.blog-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog-text a{
+    color: #0f0f0f;
+}
+
+.blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1250px) {
+    .blog-box{
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px) {
+    .blog-box{
+        width: 70%;
+    }
+}
+
+@media(max-width:550px) {
+    .blog-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog {
+        padding: 20px;
+    }
+}

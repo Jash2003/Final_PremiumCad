@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pathways.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Pathways | PremiumCAD</title>
+</head>
+<script>
+  $(document).ready(function() {
+    $('#icon').click(function(){
+      $('ul').toggleClass('show');
+    })
+  })
+</script>
+<body>
+
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+      <img class="alternate-logo" src="{% static 'images/logo_mini.png' %}" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecomservices.html#two">Construction Drawings</a></li>
+              <li><a href="telecomservices.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><a class="active">Process</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blogs.html">Premium Blog</a></li>
+      <li><a href="pathways.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+
+
+  <!-- Baanner -->
+  <div id="process_banner"></div>
+  <!-- End Banner -->
+
+  <!-- End banner -->
+
+  <section>
+    <div class="row gy-4">
+      <h1 class="top-heading main-heading">Exploring opportunities</h1>
+    </div>
+  </section>
+
+  <!-- quality intro -->
+  <section id="quality-intro" class="quality-intro">
+      <div class="container">
+          <div class="row gx-0">
+              <div class="col-lg-6 d-flex flex-column justify-content-center">
+                  <div class="content">
+                      <h3 style="font-size: 25px;">Unwavering Commitement to quality</h3>
+                      <p>
+                          PremiumCAD's unwavering commitment to quality drives us. With dedicated quality managers, we ensure adherence to client needs. 
+                          Emphasizing innovation, we learn from clients and competitors, striking a balance between speed and precision.
+                      </p>
+                      <p>
+                          Structured planning and the Japanese Kaizen process are valued. Our Six-Sigma certified team creates checklists for excellence. 
+                          Feedback drives constant enhancement. A continuous cycle ensures quality gains strength through client inputs.
+                      </p>
+                  </div>
+                </div>
+              <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                  <img src="{% static 'images/pathways/quality_flowchart-removebg-preview.png' %}" class="img-fluid" alt="image-loading...">
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- quality intro -->
+    
+  <!-- quality para -->
+  <section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+        <h3>Quality-Driven Outsourcing for Maximum Savings</h3>
+        <p>
+            At <strong>PremiumCAD</strong>, our goal is simple: help you maximize savings through outsourcing. 
+            We prioritize long-term partnerships, utilizing our internal learning curve and economies of 
+            scale to ensure mutual benefits. With consistent quality and timely delivery, we enable you to 
+            explore new business opportunities and expand customer service capacity. Our engineers' training 
+            and development, done on your behalf, ensure time savings and scalability, reflected in transparent pricing.
+            <br>
+            <br>
+            Stay ahead of the competition with our flexible delivery options, accommodating short-notice demands without 
+            compromising quality. Our commitment to you goes beyond cost savings; we share the advantages of scaled-up 
+            operations and optimization, enhancing the overall value of our partnership. Partner with PremiumCAD and 
+            unlock your business's true potential—maximize savings, optimize efficiency, and embrace new possibilities.
+        </p>
+        </div>
+    </div>
+  </section>
+  <!-- quality para end -->
+  <!-- house of quality image -->
+  <section class="diagram">
+  <div class="container">
+      <div class="row">
+      <div class="col-12">
+          <img src="{% static 'images/pathways/house_of_quality_cropped.jpg' %}" alt="Image Description" class="img-fluid">
+      </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="main_content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="aboutus-banner">
+            <h1 class="main-heading">Our Internal Process</h1>
+          </div>
+          <div class="aboutus">
+            <h2><i class="fa-solid fa-arrow-right-long"></i>  New Job Work-Flow</h2>
+            <p>Whenever a new client / job are received, our Pre-Sales team gets working on it to decode 
+              it into simpler step by step design. This process involves a round of discussion with the 
+              client and exchange of samples in order to understand the client's requirement. Once the 
+              client approves the samples, the notes and necessary documentation is transitioned to operations 
+              for their trainings and delivery.
+            </p>
+          </div>
+          <div class="heading">
+            <h2><i class="fa-solid fa-arrow-right-long"></i>  Quality Assurance</h2>
+            <p>
+              Once the Pre-sales team gets the client's approval for a sample, QA team gets into action. 
+              They start developing checklists for ensuring that QC can be conducted on every file / batch 
+              and agreed standard of quality is maintained across the length of a project.
+            </p>
+          </div>
+          <div class="heading">
+            <h2><i class="fa-solid fa-arrow-right-long"></i>  Team Assignment and Training</h2>
+            <p>
+              Operations department, after clearance by pre-sales deploys a team and starts training them on 
+              the project specific requirements. Team sizing and identification starts at the time of customer 
+              sign-up, however, the project-specific trainings begin only after the samples are approved. 
+              These trainings usually last between 1-3 days depending on the complexity / uniqueness of a project. 
+              Our in-house training facility can train 3-4 simultaneous batches of upto 20 people.
+            </p>
+          </div>
+          <div class="heading">
+            <h2><i class="fa-solid fa-arrow-right-long"></i>  Introduction of Project Managers</h2>
+            <p>
+              After gaining approval of pre-sales samples, our dedicated team collaborates closely with clients in the initial phase, 
+              ensuring seamless delivery. Once stability is achieved, a skilled Project Manager oversees quality and volume, while an 
+              Account Manager becomes the client's advocate. Serving as a single point of contact, the Account Manager handles Finance, 
+              Operations, and Feedback, while also fostering proactive engagement to strategize for future growth and expansion.
+            </p>
+          </div>
+          <div class="heading">
+            <h2><i class="fa-solid fa-arrow-right-long"></i>  Delivery and Feedback</h2>
+            <p>
+              At PremiumCAD, we prioritize client needs and feedback. Our project manager and team leaders hold regular calls to assess 
+              delivery quality and create forecasts, ensuring your business needs are met. We value comprehensive feedback, conducting 
+              CSAT surveys to enhance client experience in invoicing, pricing, quality, and responsiveness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact for amd footer -->
+  <!-- CONTACT US SECTION  -->
+  <section id="getintouch" class="getintouch">
+    <div class="contactus">
+      <div class="title">
+        <h2>Lets get in touch.</h2>
+      </div>
+      <div class="box">
+        <div class="contact form">
+          <h3 style="color: #1f194c;">Send a message</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" placeholder="Your first name" required>
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="Your last name" required>
+                </div>
+              </div>
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="email" placeholder="abc@xyz.com" required>
+                </div>
+                <div class="inputBox">
+                  <span>Mobile</span>
+                  <input type="number" placeholder="Enter your Mobile No.">
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="contact info">
+          <h3>Contact Us</h3>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>Suite #2243, Doon Business Park, Transport Nagar, Dehradun, India</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>ABL Workspaces, LGF, F2 Sector-8, Noida, India</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:contact@premiumcad.com">contact@premiumcad.com</a>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+919910398768">+91 99103 98768</a>
+            </div>
+            <div>
+              <span><i class="fa-brands fa-linkedin"></i></span>
+              <a href="https://in.linkedin.com/company/premiumcad" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.4543585844885!2d77.99022877601061!3d30.281124307317256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bb9a413274b%3A0xb94d5b0a63db81e6!2sDoon%20Express%20Business%20Park%20Rd%2C%20Subhash%20Nagar%2C%20Sewla%20Khurd%2C%20Dehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1694190298924!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT US END -->
+
+
+  <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/?originalSubdomain=in" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+</body>
+</html>

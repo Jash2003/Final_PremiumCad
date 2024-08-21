@@ -1,0 +1,441 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue-text {
+  color: #2d348f;
+}
+
+.orange-text {
+  color: #d95a31;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+  
+.top-content{
+  margin: 0 auto;
+  width: 95%;
+}
+.main-heading {
+  text-align: center;
+  padding: 40px 0 0 0;
+  color: #483285;
+  font-size: 50px;
+}
+
+.main-para {
+  padding: 20px 110px 0 110px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .top-content{
+    width: 100%;
+    margin: 0;
+  }
+  .main-para {
+    padding: 25px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-box .icon {
+  font-size: 36px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.services .section-header h3 {
+  text-align: left;
+}
+
+.services .section-header p {
+  font-weight: 300;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+.services .section-header ul {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.services .service-box h3 {
+  color: #3d4f97;
+  font-weight: 600;
+}
+
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 20px;
+}
+
+.services .service-box{
+  background: #fff;
+}
+
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+
+.services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.services .service-box.blue .read-more {
+  color: #2db6fa;
+}
+
+.services .service-box.blue:hover {
+  background: #3d4f97;
+}
+
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+
+.services .service-box.orange:hover {
+  background: #3d4f97;
+}
+
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+
+.services .service-box.green:hover {
+  background: #3d4f97;
+}
+
+.services .service-box.red {
+  border-bottom: 3px solid #e9222c;
+}
+
+.services .service-box.red .icon {
+  color: #e9222c;
+  background: #fef7f8;
+}
+
+.services .service-box.red .read-more {
+  color: #e9222c;
+}
+
+.services .service-box.red:hover {
+  background: #3d4f97;
+}
+
+.services .service-box.purple {
+  border-bottom: 3px solid #b50edf;
+}
+
+.services .service-box.purple .icon {
+  color: #b50edf;
+  background: #f8e4fd;
+}
+
+.services .service-box.purple .read-more {
+  color: #b50edf;
+}
+
+.services .service-box.purple:hover {
+  background: #3d4f97;
+}
+
+.services .service-box.pink {
+  border-bottom: 3px solid #f51f9c;
+}
+
+.services .service-box.pink .icon {
+  color: #f51f9c;
+  background: #feecf7;
+}
+
+.services .service-box.pink .read-more {
+  color: #f51f9c;
+}
+
+.services .service-box.pink:hover {
+  background: #3d4f97;
+}
+
+.services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+
+.services .service-box:hover .icon {
+  background: #fff;
+}
+
+
+#solar-services {
+  /* background-image: url(../images/istockphoto-662095604-170667a.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Specific Service page css */
+
+.servicespecific {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.solardesign .banner{
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/service_specific/solarbanner.jpg);
+}
+ 
+.solardesign .one {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/solar1.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.solardesign .two {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/solar2.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.solardesign .three {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/solar3.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.servicespecific h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  color: #483285;
+}
+
+.servicespecific p, li {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.servicespecific h2{
+  text-align: center;
+  font-size: 39px;
+  padding-bottom: 10px;
+}
+
+.telecom .banner {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/service_specific/telecombanner.jpg);
+}
+
+.telecom .one {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/telecom1.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.telecom .two {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/telecom2.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.telecom .three {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/telecom3.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.GIS .banner {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/service_specific/gisbanner.jpg);
+}
+
+.GIS .one {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/gis1.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.GIS .two {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/gis2.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.GIS .three {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/gis3.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.cad .banner {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/service_specific/cadbanner.jpg);
+}
+
+.cad .one {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/cad1.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.cad .two {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/cad2.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.cad .three {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  background-image: url(../images/service_specific/cad3.jpg);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+#service_banner {
+  background-size: cover;
+  background-position: center;
+  height: 55vmin;
+  width: 100%;
+  background-image: url(../images/service_banner.jpeg);
+}

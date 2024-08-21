@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {%load static%}
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" 
+    crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- CSS File-->
+   <link rel="stylesheet" href="{% static 'css/common.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about-us.css' %}">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+  
+  <title>AboutUs | PremiumCAD</title>
+
+  <script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      })
+    })
+  </script>
+</head>
+
+<body>
+
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+      <img class="alternate-logo" src="{% static 'images/logo_mini.png' %}" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecomservices.html#two">Construction Drawings</a></li>
+              <li><a href="telecomservices.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><a href="pathways.html">Process</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blogs.html">Premium Blog</a></li>
+      <li><a href="about.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+  
+  <div id="about_banner"></div>
+
+  
+  <section class="main_content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="aboutus-banner">
+                    <h1 class="main-heading">About Us</h1>
+                </div>
+                <div class="aboutus">
+                    <h2>Who We Are</h2>
+                    <p>
+                        PremiumCAD has extensive experience in the CAD and GIS industry, providing quality manpower and delivering complex projects globally. 
+                        Our team excels in designing residential solar plans, understanding AHJ and Utility requirements, and meeting various codes and compliances.
+                        <br>
+                        We began as freelancers offering Solar PV Design Services and Residential Solar permit plans for US installers. 
+                        Today, we have grown to a team of over 145 employees with dedicated training centers and partnerships with technical institutes 
+                        in the NCR of India. Our Build, Operate, and Transfer projects are white-labeled and delivered to a global clientele.
+                    </p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>What We Do</h2>
+                    <p>We are the preferred outsourcing partner for CAD & GIS based Engineering designs. 
+                        With an experienced and a highly motivated team of professionals, we provide a 
+                        competitive edge to our clients in a price-sensitive market by offering scalable 
+                        and timely deliveries with agreed quality SLAs.</p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>Why Us</h2>
+                    <p>We provide flexibility and reliability, giving you a head-start in a competitive environment. With fully customizable quality and 
+                        delivery TAT, we offer economical design services with consistency. Our team of engineers works round the clock to meet your needs.</p>
+                </div>
+                <br>
+                <div class="heading mission">
+                    <h2>Our Mission</h2>
+                    <div class="mission-content">
+                        <div class="mission-text">
+                            <p>Our mission is to provide comprehensive engineering design services to our clients, utilizing cutting-edge technology, 
+                                industry-leading expertise, and meticulous attention to detail. We strive to deliver solutions that exceed expectations, 
+                                optimize efficiency, and contribute to the sustainable development of society. Through continuous improvement, 
+                                collaboration, and a culture of excellence, we aim to be the preferred partner for all engineering design needs.</p>
+                        </div>
+                        <div class="mission-image">
+                            <img src="{% static 'images/values/v1.png' %}" alt="Our Mission">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="heading vision">
+                    <h2>Our Vision</h2>
+                    <div class="vision-content">
+                        <div class="vision-image">
+                            <img src="{% static 'images/values/v2.png' %}" alt="Our Vision">
+                        </div>
+                        <div class="vision-text">
+                            <p>To be the leading global engineering design company, renowned for our innovative solutions, exceptional quality, 
+                                and unwavering commitment to client satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="heading values">
+                  <h2>Core Values</h2>
+                  <div class="values-content">
+                      <div class="values-text">
+                          <ul>
+                              <li><strong>Trust</strong>: We earn the trust of our customers, employees, and extended family.</li>
+                              <li><strong>Excellence</strong>: We are committed to the highest quality and safety standards.</li>
+                              <li><strong>Service</strong>: Customer first, frontline focused, and agile in service to customers.</li>
+                              <li><strong>Innovation</strong>: We embrace change and continually seek new ways to improve.</li>
+                              <li><strong>Gratitude</strong>: We treat others as we want to be treated.</li>
+                              <li><strong>Responsive</strong>: Being responsive shows that you put others first and care about their needs.</li>
+                              <li><strong>Teamwork</strong>: We recognize that trusting relationships are key to achieving success.</li>
+                          </ul>
+                      </div>
+                      <div class="values-image">
+                          <img src="{% static 'images/values/v3.png' %}" alt="Our Core Values">
+                      </div>
+                  </div>
+              </div>
+                <br>
+                <div class="heading">
+                    <h2>Partnership & Reverse Integration</h2>
+                    <p>We are not just an outsource partner! We are an integral part of our client's 
+                        value chain and offer collaborations, employee exchange and quality monitoring 
+                        through resident engineers and shared training facilities. We blend perfectly 
+                        with our client's working culture and offer a captive back-office for design 
+                        and sales plan.</p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>Process Orientation</h2>
+                    <p>Quality is the key to the success of any business and at PremiumCAD, we are committed to it. 
+                        We have a state of the art Quality Management System designed to facilitate continual improvement 
+                        of the business. We use your feedback and inputs to evaluate our processes and upgrade 
+                        the training and quality management process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- CONTACT US SECTION  -->
+  <section id="getintouch" class="getintouch">
+    <div class="contactus">
+      <div class="title">
+        <h2>Lets get in touch.</h2>
+      </div>
+      <div class="box">
+        <div class="contact form">
+          <h3 style="color: #1f194c;">Send a message</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" placeholder="Your first name" required>
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="Your last name" required>
+                </div>
+              </div>
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="email" placeholder="abc@xyz.com" required>
+                </div>
+                <div class="inputBox">
+                  <span>Mobile</span>
+                  <input type="number" placeholder="Enter your Mobile No.">
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="contact info">
+          <h3>Contact Us</h3>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>Suite #2243, Doon Business Park, Transport Nagar, Dehradun</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>ABL Workspaces, LGF, F2 Sector-8, Noida, India</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:contact@premiumcad.com">contact@premiumcad.com</a>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:+919910398768">+91 99103 98768</a>
+            </div>
+            <div>
+              <span><i class="fa-brands fa-linkedin"></i></span>
+              <a href="https://in.linkedin.com/company/premiumcad" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.4543585844885!2d77.99022877601061!3d30.281124307317256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bb9a413274b%3A0xb94d5b0a63db81e6!2sDoon%20Express%20Business%20Park%20Rd%2C%20Subhash%20Nagar%2C%20Sewla%20Khurd%2C%20Dehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1694190298924!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT US END -->
+
+
+  <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%load static%}
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Solar Design | PremiumCAD</title>
+</head>
+<script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      })
+    })
+  </script>
+<body class="servicespecific solardesign">
+    <nav>
+        <label class="logo">
+          <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+          <img class="alternate-logo" src="{% static 'images/logo_mini.png' %}" alt="PremiumCAD">
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="services.html">Services</a>
+            <ul class="dropdown-content">
+              <li class="dropdown-part">
+                <a href="cadservices.html">CAD Services</a>
+                <ul class="sub-dropdown">
+                  <li><a href="cadservices.html#one">2D/3D Drafting</a></li>
+                  <li><a href="cadservices.html#two">Engineering Drawings</a></li>
+                  <li><a href="cadservices.html#three">BIM</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-part">
+                <a href="solardesign.html">Solar Designs</a>
+                <ul class="sub-dropdown">
+                  <li><a href="solardesign.html#one">Residential Drawings</a></li>
+                  <li><a href="solardesign.html#two">Commercial Designs</a></li>
+                  <li><a href="solardesign.html#three">Reviews and Stamps</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-part">
+                <a href="gisservices.html">GIS Solutions</a>
+                <ul class="sub-dropdown">
+                  <li><a href="gisservices.html#one">Utility Mapping</a></li>
+                  <li><a href="gisservices.html#two">GIS Mapping</a></li>
+                  <li><a href="gisservices.html#three">Georeferencing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-part">
+                <a href="telecomservices.html">Telecom Services</a>
+                <ul class="sub-dropdown">
+                  <li><a href="telecomservices.html#one">Small Cell/5G Drafting</a></li>
+                  <li><a href="telecomservices.html#two">Construction Drawings</a></li>
+                  <li><a href="telecomservices.html#three">FTTx Network Design</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li><a href="pathways.html">Process</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="blogs.html">Premium Blog</a></li>
+          <li><a href="index.html#getintouch">Contact Us</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+
+    <section class="banner"></section>
+    <section class="cntnt container">
+        <h1>Solar Design & Engineering Services</h1>
+        <p>At PremiumCAD, we have been working with various Solar Installers and contractors for over a decade, providing them end-to-end solution for Solar 
+            <b>PV design</b> services requirements. We have in-depth knowledge of state/AHJ requirements and have been maintaining a high first-time approval 
+            rate. The various touchpoints/contributions of PremiumCAD includes:
+            <br>
+            <ul>
+                <li>Creation of <b>proposal drawings</b> including financial analysis</li>
+                <li>Creation of Residential Solar Permit Plan set for PTI (Permission to Install)/Interconnection approval</li>
+                <li>Engineering reviews by <b>Professional Engineers</b></li>
+                <li>As-Built drawings to procure <b>PTO</b> (Permission to Operate)</li>
+            </ul>
+        </p>
+    </section>
+    <section class="one" id="one"></section>
+    <section class="cntnt container">
+        <h2>Residential Drawings</h2>
+        <p>Teams at PremiumCAD have extensive experience and knowledge in designing Residential Solar Permit Plans. We work with our customers to provide 
+            end-to-end solution for their <b>residential PV plan</b> requirements starting right from Proposal creation to <b>Permit Set</b> creation, <b>Engineering Review</b> 
+            and <b>As-Built</b> creation.
+        </p>
+        <h3>Proposal Drawings</h3>
+        <p>
+            Proposal Drawing are one of the initiations point and are very critical. We have large teams who have extensive knowledge of various industry standards 
+            and guidelines used by various States/AHJs and are capable of turning around the proposals at a very fast pace. We are platform agnostic and are open 
+            and swift to adapt any existing workflows which may be interacting with your sales teams.
+            <br>
+            For large proposal requirements, we even setup dedicated workforce who work in sync with your sales team and provide almost real-time support while you 
+            are out selling. Typical turnaround times for proposals are 12 Hrs.
+            <br>
+            Our teams are experienced with creating Proposal Drawings with most optimum solar production proposals with just having an address and any specific 
+            client requirements.
+        </p>
+        <h3>Permit Plan Set</h3>
+        <p>
+            Residential Solar Permit Plan Sets or Construction drawings are another critical component of the process. We understand and ensure that the permit 
+            sets created are precise, accurate, complete and clean/aesthetically pleasing for the installation team to understand and install solar panels in the 
+            field as per plan.
+            <br>
+            Our teams are well aware of National Electric Codes (NEC) and other applicable codes for various AHJs and Home Owner Association (HOA) requirements. 
+            We are pretty swift in adapting codes changes and any custom requirements from customer, installer and/or EPCs.
+            <br>
+            Designers at PremiumCAD are well conversant and acquainted with requirements and design specifications for different type of installations and 
+            Interconnections:
+            <ul>
+                <li>Flush Mounts installation</li>
+                <li>Tilt Roof Mount</li>
+                <li>Non-Penetrating Roof Mount</li>
+                <li>Ballast</li>
+                <li>Ground Mount Installations</li>
+                <li>Microinverters</li>
+                <li>On-Grid / Off-Grid</li>
+                <li>Hybrid</li>
+                <li>Battery Backups</li>
+            </ul>
+            <br>
+            While we are open to adapt to customer templates and design specification to ensure that you and your team do not see a change in their ongoing process, 
+            we have our own comprehensive templates as well. These templates are customized to use blocks and data tables to ensure consistency and accuracy in data 
+            and design.
+            <br>
+            Our typical Residential Solar Permit Plan Set includes the following; however, these are customizable and adaptable to any specific need:
+            <ul>
+                <li>Title Page
+                    <ul>
+                        <li>Sheet index</li>
+                        <li>Governing Codes section</li>
+                        <li>Vicinity map, parcel map, aerial view</li>
+                        <li>Description of the project</li>
+                    </ul>
+                </li>
+                <li>PV Layout
+                    <ul>
+                        <li>Locations of all major components and equipment</li>
+                        <li>Attachment point spacing</li>
+                        <li>Point loads</li>
+                        <li>Conduit runs</li>
+                        <li>Solar PV array location and dimensions</li>
+                    </ul>
+                </li>
+                <li>Mounting Method
+                    <ul>
+                        <li>Elevation of attachment method</li>
+                        <li>Racking and mounting hardware</li>
+                        <li>Structural sections</li>
+                    </ul>
+                </li>
+                <li>Wiring Diagram
+                    <ul>
+                        <li>3-line wire diagram</li>
+                        <li>Wire and conduit sizing</li>
+                        <li>String / Branch circuit sizing for DC and AC systems</li>
+                        <li>Grounding details</li>
+                        <li>Interconnection method (breaker, line-side splice, subpanels, etc.)</li>
+                        <li>All electrical calculations</li>
+                        <li>System specifications</li>
+                    </ul>
+                </li>
+                <li>Signage
+                    <ul>
+                        <li>All required placards</li>
+                        <li>Specifications of placard physical sizes</li>
+                    </ul>
+                </li>
+                <li>Specification Sheets
+                    <ul>
+                        <li>Solar Modules</li>
+                        <li>Inverters</li>
+                        <li>Racking</li>
+                    </ul>
+                </li>
+            </ul>
+            Typical inputs required for completion of a permit plan are home owner details, equipment details including module, inverter, racking system and attachment 
+            details, an approved layout or any guidelines on required system size, structural details, photos along with site measurements of roof (in case site 
+            measurements are not available, these are designed based on google/nearmap images, as may be available) and details and photos of existing electrical 
+            equipment and locations.
+            <br>
+            Availability of the above information ensures accurate and efficient system design in the first-go and early AHJ acceptances.
+        </p>
+        <h3>As-Built Drawings</h3>
+        <p>
+            While the permit set design is done to best of available information including measurements and obstruction locations, sometime however, variations are 
+            observed in field and the installation team has to deviate/accommodate the actual field situation. This at times result in change of layout, 
+            interconnection used or other parameters.
+            <br>
+            As_Builts are generally required for the record of Home owners to keep a copy of the final installation plan and at times required by AHJs before proving 
+            Permit to Operate (PTO).
+            <br>
+            We would only require the change information, may be marked on the initial plan or a sketch of changes to make the As-Builts and deliver them on priority.
+        </p>
+        <h3>Revisions/Changes</h3>
+        <p>
+            We at PremiumCAD do acknowledge the fact that there are instances when the created Plan set require changes and address such change/revision requests 
+            on priority and ensure that the required changes with complete impact analysis are implemented in the first go itself and thus maintaining the overall 
+            turn-around time. The changes may occur due to change in racking system, mounting plans or layout, electrical equipment or any specific requirement from 
+            AHJ and our teams are able to handle all very swiftly.
+        </p>
+    </section>
+    <section class="two" id="two"></section>
+    <section class="cntnt container">
+        <h2>Commercial Designs (C&I)</h2>
+        <p>
+            We have successfully designed several commercial projects (1mW to 5mW) with different types for racking systems on roof, carports and ground mounts. 
+            We are equipped to prepare the PV array layouts, mounting details, BOS Elevations shading analysis, Electrical 3 line and single line diagrams etc.
+        </p>
+        <h3>Freestanding Structures</h3>
+        <p>Extensive experience in designing the PV System on a free standing structure like Carports, Single Axis tracking, Dual axis tracking system and Ground 
+            mount racking.
+        </p>
+        <h3>Roof Top</h3>
+        <p>We have worked on several roof top commercial designs ranging from few kW to MW. We have designed this with various racking and module manufacturers. 
+            We have created right from rough sketches to the construction documents. We provide full installation details of the solar system along with the required 
+            drawings needed by the authorities.
+        </p>
+        <h3>Ground Mount</h3>
+        <p>
+            Designed Ground mounts for flat and sloping grounds using various racking systems. We can provide detailed arrangement drawings for ground mount systems 
+            including the overviews from all directions.
+        </p>
+    </section>
+    <section class="three" id="three"></section>
+    <section class="cntnt container">
+        <h2>Engineering Reviews and Stamp</h2>
+        <p>
+            PremiumCAD, through its network, provide Electrical & Structural Professional Engineering (PE) stamps for all 50 states. Some states require PE stamps 
+            for solar projects and some contractors add PE stamps as an extra level of quality. Construction plans with PE stamps give customers added assurance 
+            that their solar and storage projects have been safely designed and engineered to the codes and standards of your state and jurisdiction.
+            <br>
+            PremiumCAD is a national leader in Solar Design Industry. We have delivered hundreds of structural Certifications and designs for Residential and Commercial
+             solar installers that enables solar installers to get building permits.
+            <br>
+            We can facilitate Structural & Electrical Review & Stamps thru our licensed PE partners in ALL 50 STATES.
+            <br>
+            Whether you need structural certifications for one or a hundred jobs, PremiumCAD can assist you to prepare Certification Letters in a single business day. 
+            Our professional staff, combined with our proven proprietary systems, enables us to deliver affordable, high-volume, rapid, top-quality engineering services.
+            <br>
+            Send us your site audit form. We'll perform professional engineering services, which generally take the form of a Structural Certification Letter, but can 
+            include custom engineering designs as well.
+            <br>
+            We offer our services in:
+            <ul>
+                <li>Evaluating structural loads</li>
+                <li>Solar panel placement</li>
+                <li>Structural reinforcement</li>
+                <li>Engineer's stamped drawings or letters for building departments</li>
+                <li>Structural certifications for building departments</li>
+                <li>Electrical P.E. Stamps (wet or digital)</li>
+                <li>Structural P.E. Stamps (wet or digital)</li>
+            </ul>
+        </p>
+    </section>
+
+    <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/?originalSubdomain=in" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-para">PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+</body>
+</html>

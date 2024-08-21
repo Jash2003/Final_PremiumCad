@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description</title>
+    <link rel="stylesheet" href="{% static 'css/jd.css' %}">
+</head>
+
+<body>
+    <a href="{% url 'career' %}" class="go-back-button">Go Back</a>
+    <div class="job-description-container">
+        <header class="header">
+            <h1>Join Our Team</h1>
+            <p>Your future starts here.</p>
+        </header>
+
+        <section class="job-details">
+            <h2>Job Title: <span>{{job.jobtitle}}</span></h2>
+            <p><strong>Location:</strong>{{job.location}}</p>
+            <p><strong>Department:</strong>{{job.department}}</p>
+            <p><strong>Reports to:</strong>{{job.reports_to}}</p>
+        </section>
+
+        <section class="about-role">
+            <h3>About the Role</h3>
+            {{job.jobdescription|safe}}
+        </section>
+
+        <!-- <section class="responsibilities">
+            <h3>Key Responsibilities</h3>
+            <ul>
+                <li>Develop and maintain responsive web applications.</li>
+                <li>Collaborate with designers to ensure seamless UI/UX.</li>
+                <li>Optimize websites for speed and scalability.</li>
+                <li>Troubleshoot and debug issues across multiple browsers and devices.</li>
+                <li>Stay up-to-date with emerging technologies and industry trends.</li>
+            </ul>
+        </section>
+
+        <section class="qualifications">
+            <h3>Qualifications</h3>
+            <ul>
+                <li>Bachelor's degree in Computer Science or a related field.</li>
+                <li>Proven experience as a Web Developer or similar role.</li>
+                <li>Strong understanding of HTML, CSS, JavaScript, and other web technologies.</li>
+                <li>Experience with front-end frameworks (e.g., React, Angular, Vue.js).</li>
+                <li>Excellent problem-solving skills and attention to detail.</li>
+            </ul>
+        </section> -->
+
+        <section class="job-application">
+            <h3>How to Apply</h3>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="jobrole">Job Title:</label>
+                    <input type="text" id="jobrole" name="jobrole" value="{{job.jobtitle}}" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
+
+
